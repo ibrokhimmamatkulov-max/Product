@@ -85,7 +85,7 @@ app.post('/api/order', async (req, res) => {
 // Telegram Bot Command - ВАЖНО: URL должен быть вашим реальным!
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
-    const webAppUrl = "https://produkt.onrender.com"; // ← ЗАМЕНИТЕ на ваш URL после деплоя
+    const webAppUrl = "https://product-store-race.onrender.com"; // ← ЗАМЕНИТЕ на ваш URL после деплоя
     
     bot.sendMessage(chatId, "Добро пожаловать в магазин! Нажмите кнопку ниже:", {
         reply_markup: {
